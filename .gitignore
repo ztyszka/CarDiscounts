@@ -3,3 +3,6 @@
 ################################################################################
 
 /.vs/CarDiscounts/DesignTimeBuild
+/.vs
+/.CarDiscounts/obj
+/.CarDiscountsCalculator/obj
