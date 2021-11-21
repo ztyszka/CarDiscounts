@@ -1,12 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
+using CarDiscountsDatabase;
 
-namespace CarDiscountsDatabase
+namespace CarDiscounts
 {
-    public class CarsDatabase : ICarsDatabase
+    public class CarsDatabaseMapper : ICarsDatabaseMapper
     {
         private Dictionary<int, ICar> carsDatabase;
-        public CarsDatabase(List<ICar> cars)
+        public CarsDatabaseMapper(IEnumerable<ICar> cars)
         {
             carsDatabase = new Dictionary<int, ICar>();
             foreach (ICar car in cars)

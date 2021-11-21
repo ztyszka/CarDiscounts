@@ -1,11 +1,30 @@
 {
   "version": 3,
   "targets": {
-    ".NETCoreApp,Version=v3.1": {}
+    ".NETCoreApp,Version=v3.1": {
+      "CarDiscountsDatabase/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "compile": {
+          "bin/placeholder/CarDiscountsDatabase.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/CarDiscountsDatabase.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "CarDiscountsDatabase/1.0.0": {
+      "type": "project",
+      "path": "../CarDiscounts/CarDiscountsDatabase.csproj",
+      "msbuildProject": "../CarDiscounts/CarDiscountsDatabase.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    ".NETCoreApp,Version=v3.1": []
+    ".NETCoreApp,Version=v3.1": [
+      "CarDiscountsDatabase >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\zuzat\\.nuget\\packages\\": {},
@@ -38,7 +57,11 @@
       "frameworks": {
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\zuzat\\Documents\\CarDiscounts\\CarDiscounts\\CarDiscounts\\CarDiscountsDatabase.csproj": {
+              "projectPath": "C:\\Users\\zuzat\\Documents\\CarDiscounts\\CarDiscounts\\CarDiscounts\\CarDiscountsDatabase.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

@@ -4,9 +4,8 @@ using System.Text;
 
 namespace CarDiscountsDatabase
 {
-    public interface ICar
+    public interface IDatabaseCar
     {
-        public int CarID { get;}
         public string CarBrand { get; }
         public string CarModel { get; }
         public double CarPrice { get; set; }

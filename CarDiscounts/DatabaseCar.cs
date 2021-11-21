@@ -4,22 +4,19 @@ using System.Text;
 
 namespace CarDiscountsDatabase
 {
-    public class Car : ICar
+    public class DatabaseCar : IDatabaseCar
     {
-        private int carID;
         private string carBrand;
         private string carModel;
         private double carPrice;
 
-        public Car(int carID, string carBrand, string carModel, double carPrice)
+        public DatabaseCar(string carBrand, string carModel, double carPrice)
         {
-            this.carID = carID;
             this.carBrand = carBrand;
             this.carModel = carModel;
             this.carPrice = carPrice;
         }
 
-        public int CarID { get { return carID; } }
         public string CarBrand { get { return carBrand; } }
         public string CarModel { get { return carModel; } }
         public double CarPrice

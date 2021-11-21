@@ -1,10 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using CarDiscountsDatabase;
 
-namespace CarDiscountsDatabase
+namespace CarDiscounts
 {
-    public interface ICarsDatabase
+    public interface ICarsDatabaseMapper
     {
         ICar SearchCar(int carId);
         List<ICar> SearchBrand(string brand);
