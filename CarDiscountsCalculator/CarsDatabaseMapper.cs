@@ -23,6 +23,7 @@ namespace CarDiscountsCalculator
 
         public Dictionary<int, BusinessCar> CarsDatabase { get { return carsDatabase; } }
 
+        // w poniższej metodzie brakuje propagowania zmian do bazy danych
         public bool AddCar(BusinessCar car)
         {
             if (carsDatabase.ContainsKey(car.CarID))
@@ -31,6 +32,8 @@ namespace CarDiscountsCalculator
             return true;
         }
 
+
+        // w poniższej metodzie brakuje propagowania zmian do bazy danych
         public bool DeleteCar(BusinessCar car)
         {
             if (!carsDatabase.ContainsKey(car.CarID))
