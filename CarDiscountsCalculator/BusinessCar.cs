@@ -4,7 +4,7 @@ using System.Text;
 
 namespace CarDiscountsCalculator
 {
-    class BusinessCar
+    public class BusinessCar
     {
         private int carID;
         private string carBrand;

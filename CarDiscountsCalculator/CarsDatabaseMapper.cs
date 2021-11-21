@@ -2,18 +2,18 @@
 using System.Collections.Generic;
 using CarDiscountsDatabase;
 
-namespace CarDiscounts
+namespace CarDiscountsCalculator
 {
     public class CarsDatabaseMapper : ICarsDatabaseMapper
     {
-        private Dictionary<int, ICar> carsDatabase;
-        public CarsDatabaseMapper(IEnumerable<ICar> cars)
+        private Dictionary<int, BusinessCar> carsDatabase;
+        public CarsDatabaseMapper(IEnumerable<BusinessCar> cars)
         {
-            carsDatabase = new Dictionary<int, ICar>();
-            foreach (ICar car in cars)
+            carsDatabase = new Dictionary<int, BusinessCar>();
+            foreach (BusinessCar car in cars)
                 carsDatabase.Add(car.CarID, car);
         }
-        public bool AddCar(ICar car)
+        public bool AddCar(BusinessCar car)
         {
             if (carsDatabase.ContainsKey(car.CarID))
                 return false;   // warto dodać raportowanie błędów
@@ -21,7 +21,7 @@ namespace CarDiscounts
             return true;
         }
 
-        public bool DeleteCar(ICar car)
+        public bool DeleteCar(BusinessCar car)
         {
             if (!carsDatabase.ContainsKey(car.CarID))
                 return false;   // warto dodać raportowanie błędów
@@ -29,24 +29,24 @@ namespace CarDiscounts
             return true;
         }
 
-        public List<ICar> SearchBrand(string brand)
+        public List<BusinessCar> SearchBrand(string brand)
         {
-            List<ICar> cars = new List<ICar>();
-            foreach (ICar car in cars)
+            List<BusinessCar> cars = new List<BusinessCar>();
+            foreach (BusinessCar car in cars)
                 if (car.CarBrand == brand)
                     cars.Add(car);
             return cars;
         }
 
-        public ICar SearchCar(int carId)
+        public BusinessCar SearchCar(int carId)
         {     
             return carsDatabase.ContainsKey(carId) ? carsDatabase[carId] : null;
         }
 
-        public List<ICar> SearchModel(string model)
+        public List<BusinessCar> SearchModel(string model)
         {
-            List<ICar> cars = new List<ICar>();
-            foreach (ICar car in cars)
+            List<BusinessCar> cars = new List<BusinessCar>();
+            foreach (BusinessCar car in cars)
                 if (car.CarModel == model)
                     cars.Add(car);
             return cars;

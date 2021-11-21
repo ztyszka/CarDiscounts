@@ -3,14 +3,14 @@ using System.Collections.Generic;
 using System.Text;
 using CarDiscountsDatabase;
 
-namespace CarDiscounts
+namespace CarDiscountsCalculator
 {
     public interface ICarsDatabaseMapper
     {
-        ICar SearchCar(int carId);
-        List<ICar> SearchBrand(string brand);
-        List<ICar> SearchModel(string model);
-        bool AddCar(ICar car);
-        bool DeleteCar(ICar car);
+        BusinessCar SearchCar(int carId);
+        List<BusinessCar> SearchBrand(string brand);
+        List<BusinessCar> SearchModel(string model);
+        bool AddCar(BusinessCar car);
+        bool DeleteCar(BusinessCar car);
     }
 }
