@@ -29,6 +29,7 @@ namespace CarDiscountsCalculator
             if (carsDatabase.ContainsKey(car.CarID))
                 return false;   // warto dodać raportowanie błędów
             carsDatabase.Add(car.CarID, car);
+            nextId++;
             return true;
         }
 
