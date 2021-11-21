@@ -6,3 +6,6 @@
 /.vs
 /.CarDiscounts/obj
 /.CarDiscountsCalculator/obj
+/CarDiscountsCalculatorTests/bin/Debug/netcoreapp3.1
+/CarDiscountsCalculatorTests/obj/Debug/netcoreapp3.1
+/CarDiscountsCalculatorTests/obj
