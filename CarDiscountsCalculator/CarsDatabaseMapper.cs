@@ -6,13 +6,23 @@ namespace CarDiscountsCalculator
 {
     public class CarsDatabaseMapper : ICarsDatabaseMapper
     {
+        private int nextId;
         private Dictionary<int, BusinessCar> carsDatabase;
-        public CarsDatabaseMapper(IEnumerable<BusinessCar> cars)
+        public CarsDatabaseMapper(List<IDatabaseCar> cars)
         {
+            nextId = 0;
             carsDatabase = new Dictionary<int, BusinessCar>();
-            foreach (BusinessCar car in cars)
-                carsDatabase.Add(car.CarID, car);
+            foreach (DatabaseCar car in cars)
+            {
+                carsDatabase.Add(nextId, new BusinessCar(nextId, car.CarBrand, car.CarModel, car.CarPrice));
+                UpdateDiscounts(carsDatabase[nextId]);
+                nextId++;
+            }
+                
         }
+
+        public Dictionary<int, BusinessCar> CarsDatabase { get { return carsDatabase; } }
+
         public bool AddCar(BusinessCar car)
         {
             if (carsDatabase.ContainsKey(car.CarID))
@@ -50,6 +60,11 @@ namespace CarDiscountsCalculator
                 if (car.CarModel == model)
                     cars.Add(car);
             return cars;
+        }
+
+        public void UpdateDiscounts(BusinessCar car)
+        {
+            car.DiscountPercentage = car.CarID % 100;
         }
     }
 }

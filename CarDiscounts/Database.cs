@@ -4,9 +4,9 @@ using System.Text;
 
 namespace CarDiscountsDatabase
 {
-    public class Database
+    public static class Database
     {
-        public List<IDatabaseCar> FillEcampleOfDatabase()
+        public static List<IDatabaseCar> FillEcampleOfDatabase()
         {
             List<IDatabaseCar> cars = new List<IDatabaseCar>();
             cars.Add(new DatabaseCar("Toyota", "Auris", 45000));

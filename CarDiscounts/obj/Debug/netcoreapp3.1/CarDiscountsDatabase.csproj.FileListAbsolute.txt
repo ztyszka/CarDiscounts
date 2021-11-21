@@ -1,0 +1,9 @@
+C:\Users\zuzat\Documents\CarDiscounts\CarDiscounts\CarDiscounts\obj\Debug\netcoreapp3.1\CarDiscountsDatabase.csproj.AssemblyReference.cache
+C:\Users\zuzat\Documents\CarDiscounts\CarDiscounts\CarDiscounts\obj\Debug\netcoreapp3.1\CarDiscountsDatabase.AssemblyInfoInputs.cache
+C:\Users\zuzat\Documents\CarDiscounts\CarDiscounts\CarDiscounts\obj\Debug\netcoreapp3.1\CarDiscountsDatabase.AssemblyInfo.cs
+C:\Users\zuzat\Documents\CarDiscounts\CarDiscounts\CarDiscounts\obj\Debug\netcoreapp3.1\CarDiscountsDatabase.csproj.CoreCompileInputs.cache
+C:\Users\zuzat\Documents\CarDiscounts\CarDiscounts\CarDiscounts\bin\Debug\netcoreapp3.1\CarDiscountsDatabase.deps.json
+C:\Users\zuzat\Documents\CarDiscounts\CarDiscounts\CarDiscounts\bin\Debug\netcoreapp3.1\CarDiscountsDatabase.dll
+C:\Users\zuzat\Documents\CarDiscounts\CarDiscounts\CarDiscounts\bin\Debug\netcoreapp3.1\CarDiscountsDatabase.pdb
+C:\Users\zuzat\Documents\CarDiscounts\CarDiscounts\CarDiscounts\obj\Debug\netcoreapp3.1\CarDiscountsDatabase.dll
+C:\Users\zuzat\Documents\CarDiscounts\CarDiscounts\CarDiscounts\obj\Debug\netcoreapp3.1\CarDiscountsDatabase.pdb
