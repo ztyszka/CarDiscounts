@@ -1,8 +1,8 @@
 ﻿using System;
 
-namespace CarDiscounts
+namespace CarDiscountsCalculator
 {
-    class Program
+    class CarDiscountsCalculator
     {
         static void Main(string[] args)
         {
